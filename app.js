@@ -32,3 +32,19 @@ const lista = document.getElementById("listaAmigos");
 
 }
 
+
+
+function sortearAmigo() {
+    if (amigos.length === 0) {
+        alert("No hay amigos para sortear.");
+        return;
+    }
+
+const amigoAleatoreo = Math.floor(Math.random() * amigos.length);
+
+const amigoSeleccionado = amigos[amigoAleatoreo];
+
+const resultado = document.getElementById("resultado");
+resultado.textContent = `¡${amigoSeleccionado} ha sido seleccionado como tu amigo secreto!`;    
+
+}
