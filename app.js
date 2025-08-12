@@ -21,3 +21,14 @@ function agregarAmigo() {
 
 
 
+function mostrarAmigos() {
+const lista = document.getElementById("listaAmigos");
+    lista.innerHTML = ""; // Limpiar la lista antes de mostrar los amigos
+    amigos.forEach(amigo => {
+        const li = document.createElement("li");
+        li.textContent = amigo;
+        lista.appendChild(li);
+    });
+
+}
+
